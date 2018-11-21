@@ -177,7 +177,7 @@ def update_dictionary(my_dict, old_val, new_val):
     return my_dict
 
 
-def rule_inference(_rule, _operations):  # rule, rule_number,
+def rule_inference(_rule, _operations):
 
     my_dict = {}
 
@@ -225,7 +225,7 @@ for i in range(len(rules)):
 
     operations[i].sort(key=lambda tup: tup[0])
 
-# Executing operations to inference the output variables
+# Executing operations to infer the output variables
 for i in range(len(rules)):
     rule_inference(rules[i], operations[i])
 
